@@ -457,7 +457,7 @@ if ( ! class_exists( 'SM_Admin_Post_Types', false ) ) {
 				?>
                 <div class="sm-BlankState">
                     <h2 class="sm-BlankState-message">
-						<?php _e( 'title', 'sermon-manager' ); ?></h2>
+						<?php _e( 'Ready to start preaching?', 'sermon-manager' ); ?></h2>
                     <a class="sm-BlankState-cta button-primary button"
                        href="<?php echo esc_url( admin_url( 'post-new.php?post_type=sermon&tutorial=true' ) ); ?>"><?php _e( 'Create your first sermon!', 'sermon-manager' ); ?></a>
                     <a class="sm-BlankState-cta button"

@@ -79,8 +79,6 @@ if ( ! class_exists( 'SM_Admin_Menus', false ) ) :
 				$this,
 				'settings_page'
 			) );
-
-			add_action( 'load-' . $settings_page, array( $this, 'settings_page_init' ) );
 		}
 
 		/**
@@ -167,7 +165,7 @@ if ( ! class_exists( 'SM_Admin_Menus', false ) ) :
 		 * Init the stats page.
 		 */
 		public function stats_page() {
-			//SM_Admin_Stats::output();
+			SM_Admin_Stats::output();
 		}
 
 		/**

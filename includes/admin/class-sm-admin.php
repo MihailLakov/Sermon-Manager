@@ -51,7 +51,7 @@ class SM_Admin {
 		include_once 'class-sm-admin-menus.php';
 		#include_once 'class-sm-admin-customize.php';
 		include_once 'class-sm-admin-notices.php';
-		#include_once 'class-sm-admin-assets.php';
+		include_once 'class-sm-admin-assets.php';
 		include_once 'class-sm-admin-api-keys.php';
 
 		// Help Tabs

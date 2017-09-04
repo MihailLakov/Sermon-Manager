@@ -93,16 +93,6 @@ class SM_Admin_Notices {
 	}
 
 	/**
-	 * Remove a notice from being displayed.
-	 *
-	 * @param  string $name
-	 */
-	public static function remove_notice( $name ) {
-		self::$notices = array_diff( self::get_notices(), array( $name ) );
-		delete_option( 'sm_admin_notice_' . $name );
-	}
-
-	/**
 	 * See if a notice is being shown.
 	 *
 	 * @param  string $name
@@ -130,6 +120,16 @@ class SM_Admin_Notices {
 			self::remove_notice( $hide_notice );
 			do_action( 'sm_hide_' . $hide_notice . '_notice' );
 		}
+	}
+
+	/**
+	 * Remove a notice from being displayed.
+	 *
+	 * @param  string $name
+	 */
+	public static function remove_notice( $name ) {
+		self::$notices = array_diff( self::get_notices(), array( $name ) );
+		delete_option( 'sm_admin_notice_' . $name );
 	}
 
 	/**

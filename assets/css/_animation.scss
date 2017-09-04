@@ -1,0 +1,9 @@
+/**
+ * _animation.scss
+ * Custom Sermon Manager Animations.
+ */
+@keyframes spin {
+  100% {
+    transform: rotate( 360deg );
+  }
+}

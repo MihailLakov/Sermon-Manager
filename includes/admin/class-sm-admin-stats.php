@@ -22,7 +22,7 @@ if ( ! class_exists( 'SM_Admin_Stats', false ) ) {
 		public static function output() {
 			$stats       = self::get_stats();
 			$first_tab   = array_keys( $stats );
-			$current_tab = ! empty( $_GET['tab'] ) ? sanitize_title( $_GET['tab'] ) : $first_tab[0];
+			#$current_tab = ! empty( $_GET['tab'] ) ? sanitize_title( $_GET['tab'] ) : $first_tab[0];
 
 			#include_once 'stats/class-sm-admin-stats.php';
 			include_once 'views/html-admin-page-stats.php';
